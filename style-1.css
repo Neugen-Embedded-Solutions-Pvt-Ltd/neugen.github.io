@@ -1,0 +1,165 @@
+header {
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.carousel-item img {
+  max-height: 420px;
+  max-width: 1500px;
+  width: 100% !important;
+}
+
+.main-container {
+  margin: auto 96px 0;
+}
+
+.second-container {
+  margin: 42px 79px 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 19.5px;
+}
+
+.site-navbar .site-navigation .site-menu li a.contact-link {
+  background-color: #000;
+  color: white !important;
+  padding: 14px 13px !important;
+  margin-right: 0 !important;
+}
+
+.nav-container {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.site-navbar .site-navigation .site-menu li a.service-link {
+  margin-right: 61px
+}
+
+/* footer  */
+footer {
+  /* top: 201px; */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 29px 0;
+  background: #000;
+}
+
+/* footer .menu {
+    column-gap: 76px;
+  }
+   */
+footer .menu a {
+  color: #ffff;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 56px;
+
+}
+
+.carousel-text {
+  position: absolute;
+  right: 50%;
+  left: 40px;
+  z-index: 11;
+  padding-top: 0;
+  color: #fff;
+  text-align: start;
+  top: 23.68px;
+  font-size: 46px;
+  line-height: 56.07px;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?10si43');
+  src: url('fonts/icomoon.eot?10si43#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?10si43') format('truetype'),
+    url('fonts/icomoon.woff?10si43') format('woff'),
+    url('fonts/icomoon.svg?10si43#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-menu:before {
+  content: "\e5d2";
+}
+.icon-linkedin-square:before {
+  content: "\f08c";
+  background-color: black;
+  color: white;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?10si43');
+  src: url('fonts/icomoon.eot?10si43#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?10si43') format('truetype'),
+    url('fonts/icomoon.woff?10si43') format('woff'),
+    url('fonts/icomoon.svg?10si43#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 350px) {
+  .site-navbar {
+    padding: 0;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 380px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .menu a {
+    font-size: 13px;
+    line-height: 15px;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 23px 0 22px;
+    margin-bottom: 12px;
+  }
+}
