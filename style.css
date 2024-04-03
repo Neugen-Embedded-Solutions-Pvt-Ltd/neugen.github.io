@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -67,7 +68,7 @@ a:hover::after {
 }
 
 
-.site-navbar { 
+.site-navbar {
   z-index: 1999;
   position: relative;
   width: 100%;
@@ -123,7 +124,7 @@ a:hover::after {
 }
 
 .site-navbar .site-navigation .site-menu>li>a {
-  color: #0E4072; 
+  color: #0E4072;
   font-size: 16px;
   margin-right: 71px;
   font-weight: 400;
@@ -486,25 +487,91 @@ nav ul>li>a:hover:after,
 }
 
 .site-logo a {
-    color: #0E4072 !important;
-    font-size: 26px;
-    font-weight: 500;
-    padding: 0 !important;
-    letter-spacing: 1px;
-  }
-
-  #carouselExampleIndicators span {
-    width: 50px;
-    height: 50px;
-  }
-    
-  .site-navbar .site-navigation .site-menu li a.contact-link {
-    background-color: #000;
-    color: white !important;
-    padding: 14px 13px !important;
-    margin-right: 0 !important;
+  color: #0E4072 !important;
+  font-size: 26px;
+  font-weight: 500;
+  padding: 0 !important;
+  letter-spacing: 1px;
 }
 
-.about-section{
+#carouselExampleIndicators span {
+  width: 50px;
+  height: 50px;
+}
+
+.site-navbar .site-navigation .site-menu li a.contact-link {
+  background-color: #000;
+  color: white !important;
+  padding: 14px 13px !important;
+  margin-right: 0 !important;
+}
+
+.about-section {
   margin: 54px 178px 304px;
+}
+
+
+/* project page */
+.solution-section{
+  margin: 63px 202px 0;
+}
+.solution-title p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.56px;
+  letter-spacing: 1px;
+  margin-bottom: 28px;
+}
+.pro-sec-1{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1px;
+  margin-bottom: 45px;
+}
+
+.sol-sec-4 {
+ 
+  line-height: 35px;
+  
+  
+}
+
+.sol-sec-4 img {
+  
+  width: 100%;
+  max-height: 450px;
+  height: 100%;
+  border-radius: 10px;
+  
+}
+.sol-sec-44{
+
+}
+.sol-sec-2 img{
+  width: 100%;
+  max-height: 421px;
+  height: 100%;
+  border-radius: 10px;
+  
+}
+
+.sol-sec-4 .step-1 {
+  
+  background-color: #EEEFF066;
+   
+}
+.project-1-title{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 1px;
+  margin: 28px 0 12px;
+}
+.project-1-content{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1px;
+  margin-bottom: 92px;
 }
