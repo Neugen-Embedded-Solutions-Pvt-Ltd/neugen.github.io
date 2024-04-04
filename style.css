@@ -527,7 +527,7 @@ nav ul>li>a:hover:after,
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 1px;
-  margin-bottom: 45px;
+  padding: 0 84px;
 }
 
 .sol-sec-4 {
@@ -566,12 +566,16 @@ nav ul>li>a:hover:after,
   font-weight: 500;
   line-height: 32px;
   letter-spacing: 1px;
-  margin: 28px 0 12px;
+  padding: 28px 0 12px;
+  margin-top: 8px;
 }
 .project-1-content{
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 1px;
   margin-bottom: 92px;
+}
+.common-img img{
+  width: 1036px;
 }
