@@ -463,6 +463,7 @@ nav ul>li>a::after,
   /* background-color: #238121 !important; */
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+  margin: 9px 20px 0 0;
 }
 
 .site-navbar .site-navigation .site-menu .has-children ul>li>a::after,
@@ -577,4 +578,39 @@ nav ul>li>a:hover:after,
 }
 .common-img img{
   width: 1036px;
+}
+
+
+/* service page  */
+.services-img img{
+  /* width: 100%; */
+  /* max-width: 500px; */
+}
+
+.servive-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1px;
+  margin-bottom: 31px; 
+letter-spacing: 0.07em; 
+
+}
+.service-sub-title{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+.ser-sec-1{ 
+font-size: 18px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0.07em;
+text-align:justify
+
+} 
+
+.site-navbar .site-navigation .site-menu .has-children .dropdown a::after{
+  margin: 9px 20px ;
 }
