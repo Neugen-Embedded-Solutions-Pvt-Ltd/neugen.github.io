@@ -42,7 +42,7 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  padding: 29px 0;
+  padding: 12px 0;
   background: #000;
 }
 
@@ -53,9 +53,11 @@ footer {
 footer .menu a {
   color: #ffff;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
-  line-height: 56px;
+  line-height: 56px;  
+letter-spacing: 0.101em; 
+
 
 }
 
@@ -154,12 +156,4 @@ footer .menu a {
     align-items: center;
   }
 
-  footer .menu a {
-    font-size: 13px;
-    line-height: 15px;
-    font-size: 13px;
-    line-height: 15px;
-    padding: 23px 0 22px;
-    margin-bottom: 12px;
-  }
 }
