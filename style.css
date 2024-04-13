@@ -147,8 +147,7 @@ a:hover::after {
   -webkit-transition: 0.2s 0s;
   -o-transition: 0.2s 0s;
   transition: 0.2s 0s;
-  border: 2px solid rgb(174, 174, 188);
-  border-radius: 8px;
+  border: 2px solid rgb(174, 174, 188); 
   padding: 0 8px;
   line-height: 40px;
 }
@@ -480,7 +479,7 @@ nav ul .has-children ul li a::after {
   transition: transform .5s ease-out;
 }
 
-nav ul>li>a:hover:after{
+nav ul>li>a:hover:after {
   transform: scaleX(1);
 }
 
@@ -510,7 +509,8 @@ nav ul>li>a:hover:after{
 }
 
 .about-section {
-  margin: 56px 174px 381px 181px;
+  margin-top: 56px;
+  margin-bottom: 381px;
   /* max-width: 1084px;
   width: 100%; */
   /* margin: 54px auto 304px; */
@@ -520,7 +520,7 @@ nav ul>li>a:hover:after{
 
 /* project page */
 .solution-section {
-  margin: 63px 0 0;
+  margin-top: 63px;
 }
 
 .solution-title p {
@@ -585,17 +585,17 @@ nav ul>li>a:hover:after{
 }
 
 .common-img img {
-  width: 1036px;
+  max-width: 1036px;
 }
 
 
 /* service page  */
 .services-img img {
-  /* width: 100%; */
-  /* max-width: 500px; */
+  width: 100%;
+  max-width: 500px;
 }
 
-.servive-title {
+.service-title {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -627,9 +627,10 @@ nav ul>li>a:hover:after{
 /* solutions section */
 
 .solution-container {
-  max-width: 866px;
+  max-width: 1036px;
   width: 100%;
-  margin: 56px auto 120px;
+  margin-top: 56px ;
+  margin-bottom:120px;
 }
 
 .solution-title {
@@ -656,7 +657,7 @@ nav ul>li>a:hover:after{
   line-height: 32px;
   letter-spacing: 0.07em;
   text-align: left;
-  margin: 0 21px 32px;
+  /* margin: 0 21px 32px; */
 }
 
 .menu a {
@@ -697,11 +698,7 @@ body {
   }
 }
 
-@media (max-width: 1061px) {
-  .site-navbar .site-navigation .site-menu>li>a {
-    margin-right: 36px !important;
 
-  }
   .site-navbar { 
     padding: 0 75px 0;
 }
@@ -719,7 +716,33 @@ body {
 .about-section {
   margin: 56px 157px
 }} */
+@media (max-width: 1061px) {
+  .site-navbar .site-navigation .site-menu>li>a {
+    margin-right: 36px !important;
 
-.nav-btn::after, .contact-link::after{
+  }
+}
+
+.nav-btn::after,
+.contact-link::after {
   transform: scaleX(0) !important;
+}
+
+.common-container {
+  margin-right: 202px;
+  margin-left: 202px;
+}
+
+/* contact us */
+.contact-section {
+  margin-top: 48px;
+  margin-bottom: 246px;
+}
+
+/* service section */
+.service-section {
+  margin-bottom: 120px;
+  /* max-width: 1040px;
+  padding: 0;
+  width: 100%; */
 }
