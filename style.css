@@ -405,9 +405,9 @@ a:hover::after {
   transition: .3s all ease;
 }
 
- 
 
- 
+
+
 .sticky-wrapper.is-sticky .site-navbar {
   background-color: #FBFCFA;
   -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
@@ -497,7 +497,7 @@ nav ul>li>a:hover:after {
 
 .about-section {
   margin-top: 56px;
-  margin-bottom: 180px;
+  margin-bottom: 96px;
   /* max-width: 1084px;
   width: 100%; */
   /* margin: 54px auto 304px; */
@@ -510,13 +510,7 @@ nav ul>li>a:hover:after {
   margin-top: 63px;
 }
 
-/* .solution-title p {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29.56px;
-  letter-spacing: 0.07em;
-  margin-bottom: px;
-} */
+ 
 
 .pro-sec-1 {
   font-size: 18px;
@@ -594,6 +588,11 @@ nav ul>li>a:hover:after {
   text-align: justify
 }
 
+.service-desc {
+  margin-bottom: 48px;
+  padding: 0 52px;
+}
+
 .site-navbar .site-navigation .site-menu .has-children .dropdown a::after {
   margin: 0;
 }
@@ -608,12 +607,15 @@ nav ul>li>a:hover:after {
 }
 
 .solution-title {
+  margin-bottom: 56px;
+}
+
+.solution-title p {
   font-size: 24px;
   font-weight: 400;
   line-height: 29.26px;
   letter-spacing: 0.07em;
-  text-align: left;
-  margin-bottom: 56px;
+  margin-bottom: 0 !important;
 }
 
 .product-title {
@@ -682,10 +684,11 @@ body {
 }
 
 /* service section */
-.service-section {
-  margin-bottom: 120px;
+.service-section { 
   max-width: 1036px;
   width: 100%;
+  margin-top: 46px;
+  margin-bottom: 96px;
 }
 
 
@@ -694,12 +697,6 @@ body {
     max-width: 285px !important;
     width: 100%;
   }
-
-  .solution-container {
-    margin-bottom: 35px;
-  }
-
-
 }
 
 @media (max-width: 460px) {
@@ -712,9 +709,7 @@ body {
     flex-direction: column;
   }
 
-  .pro-sec-1 {
-    padding: 0 !important;
-  }
+
 
   .project-1-content {
     text-align: justify;
@@ -728,21 +723,14 @@ body {
     padding: 0 !important;
   }
 
-  .solution-section {
-    margin-top: 40px;
-  }
+
 
   .rocket-box {
     margin-bottom: 0 !important;
   }
 
-  .solution-title {
-    margin-bottom: 0 !important;
-  }
 
-  .solution-title p {
-    margin-bottom: 15px !important;
-  }
+ 
 
   .sol-section {
     margin-bottom: 40px !important;
@@ -787,7 +775,7 @@ body {
 
 @media (max-width:990px) {
   .pro-sec-1 {
-    padding: 0 40px !important;
+    padding: 0 40px;
   }
 }
 
@@ -836,9 +824,9 @@ body {
 }
 
 
-.second-container p {
+/* .second-container p {
   margin-bottom: 26px;
-}
+} */
 
 @media (min-width:1442px) {
   .main-container {
@@ -852,8 +840,7 @@ body {
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0.07em;
-  text-align: left;
-  margin-bottom: 56px;
+  margin-bottom: 20px;
 }
 
 .about-us-content {
@@ -873,12 +860,63 @@ body {
 }
 
 .home-desc {
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 53px;
-  letter-spacing: 1px;
   text-align: center;
   color: #1A1B1F;
-  margin-bottom: 62px;
+  margin-bottom: 56px;
+}
+
+.home-desc p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 10px 0;
+
+}
+
+.home-title {
+  font-size: 32px;
+  line-height: 39.01px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.contact-title {
+  margin-bottom: 36px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+.contact-description {
+  margin-bottom: 28px;
+}
+
+.contact-description div {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.address {
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.address-txt {
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  line-height: 57px;
+
+}
+
+.project-content {
+  margin-bottom: 75px;
 }
