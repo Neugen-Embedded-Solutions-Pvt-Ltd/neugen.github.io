@@ -87,7 +87,7 @@ $(function() {
 });
 $(document).ready(function(){
   $(window).on('resize load', function(){
-    if($(window).width() > 1440){
+    if($(window).width() > 1440 || $(window).width() > 400){
       console.log('first')
       $('body').find('.main-container').addClass('container');
     }else{
