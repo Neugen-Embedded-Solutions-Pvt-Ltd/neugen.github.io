@@ -405,9 +405,9 @@ a:hover::after {
   transition: .3s all ease;
 }
 
+ 
 
-
-
+ 
 .sticky-wrapper.is-sticky .site-navbar {
   background-color: #FBFCFA;
   -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
@@ -629,7 +629,7 @@ nav ul>li>a:hover:after {
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0.07em;
-  text-align: left;
+  text-align: justify;
   margin-bottom: 21px;
 }
 
@@ -684,6 +684,8 @@ body {
 /* service section */
 .service-section {
   margin-bottom: 120px;
+  max-width: 1036px;
+  width: 100%;
 }
 
 

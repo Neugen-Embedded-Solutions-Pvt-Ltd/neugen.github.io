@@ -92,7 +92,12 @@ $(document).ready(function(){
       $('body').find('.main-container').addClass('container');
     }else{
       console.log('second')
-      $('body').find('main-container').removeClass('container');
+      $('body').find('.main-container').removeClass('container');
     }
-  })
-})
+  });
+  $(window).on('resize load', function(){
+    if($(window).width() <= 1024){
+      $('body').find('.service-section').addClass('container');
+    }
+  });
+});
