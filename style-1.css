@@ -5,8 +5,8 @@
 
 .carousel-item img {
   min-height: 400px;
-  width: 1240px;
-  /* width: 100% !important; */
+  /* width: 1240px; */
+  width: 100% !important;
 }
 
 .main-container {
