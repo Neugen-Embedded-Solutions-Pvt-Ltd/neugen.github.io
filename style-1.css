@@ -1,12 +1,12 @@
-header {
+/* header {
   margin-top: 20px;
   margin-bottom: 24px;
-}
+} */
 
 .carousel-item img {
-  max-height: 420px;
-  max-width: 1500px;
-  width: 100% !important;
+  min-height: 400px;
+  width: 1240px;
+  /* width: 100% !important; */
 }
 
 .main-container {
@@ -14,7 +14,7 @@ header {
 }
 
 .second-container {
-  margin: 42px 79px 10px;
+  margin: 56px 79px 64px;
   font-size: 16px;
   letter-spacing: 1px;
   line-height: 19.5px;
@@ -68,12 +68,13 @@ letter-spacing: 0.101em;
   z-index: 11;
   padding-top: 0;
   color: #fff;
-  text-align: start;
-  top: 23.68px;
-  font-size: 46px;
-  line-height: 56.07px;
-  letter-spacing: 1px;
+  top: 38px;
+  font-size: 32px;
   font-weight: 900;
+  line-height: 39.01px;
+  letter-spacing: 1px;
+  text-align: left;
+  white-space: nowrap;
 }
 
 @font-face {
