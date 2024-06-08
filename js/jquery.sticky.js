@@ -52,7 +52,7 @@
           etse = elementTop - s.topSpacing - extra;
 
         //update height in case of dynamic content
-        // s.stickyWrapper.css('height', s.stickyElement.outerHeight());
+        s.stickyWrapper.css('height', s.stickyElement.outerHeight());
 
         if (scrollTop <= etse) {
           if (s.currentTop !== null) {
@@ -103,7 +103,7 @@
             }
 
             if (s.currentTop === s.topSpacing && s.currentTop > newTop || s.currentTop === null && newTop < s.topSpacing) {
-              // just reached bottom || just started to stick but bottom is already reached
+              // just reached bottom || just started to stick but bottom is alcontainer reached
               s.stickyElement.trigger('sticky-bottom-reached', [s]);
             } else if(s.currentTop !== null && newTop === s.topSpacing && s.currentTop < newTop) {
               // sticky is started && sticked at topSpacing && overflowing from top just finished
@@ -194,7 +194,7 @@
         var element = $(stickyElement);
         var stickyWrapper = element.parent();
         if (stickyWrapper) {
-          stickyWrapper.css('height', '84px');
+          stickyWrapper.css('height', element.outerHeight());
         }
       },
 

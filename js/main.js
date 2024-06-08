@@ -1,29 +1,33 @@
-$(function() {
+$(document).ready(function () {
 
-    var siteSticky = function() {
-          $(".js-sticky-header").sticky({topSpacing:0});
-      };
-      siteSticky();
-  
-      var siteMenuClone = function() {
-  
-          $('.js-clone-nav').each(function() {
+  var siteSticky = function () {
+    $(".js-sticky-header").sticky({ topSpacing: 0 });
+  };
+  siteSticky();
+
+  var siteMenuClone = function () {
+
+    $('.js-clone-nav').each(function () {
       var $this = $(this);
       $this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
     });
 
 
-          setTimeout(function() {
+    setTimeout(function () {
 
-      var counter = 0;
-        $('.site-mobile-menu .has-children').each(function(){
+
+      var counter = 1;
+      $('.site-mobile-menu .has-children').each(function () {
         var $this = $(this);
 
-        $this.prepend('<span class="arrow-collapse collapsed">');
+        $this.prepend('<a class="arrow-collapse"></a>');
 
         $this.find('.arrow-collapse').attr({
           'data-toggle': 'collapse',
-          'data-target': '#collapseItem' + counter,
+          'href': '#collapseItem' + counter,
+          'role': 'button',
+          'aria-expanded': 'false',
+          'aria-controls': 'collapseItem' + counter,
         });
 
         $this.find('> ul').attr({
@@ -39,10 +43,13 @@ $(function() {
 
     $('body').on('click', '.arrow-collapse', function (e) {
       var $this = $(this);
+      console.log('clicked')
       if ($this.closest('li').find('.collapse').hasClass('show')) {
         $this.removeClass('active');
+        console.log('collapse show active');
       } else {
         $this.addClass('active');
+        console.log('not show active');
       }
       e.preventDefault();
 
@@ -85,18 +92,18 @@ $(function() {
   siteMenuClone();
 
 });
-$(document).ready(function(){
-  $(window).on('resize load', function(){
-    if($(window).width() > 1440 || $(window).width() < 406){
+$(document).ready(function () {
+  $(window).on('resize load', function () {
+    if ($(window).width() > 1440 || $(window).width() < 406) {
       console.log('first')
       $('body').find('.main-container').addClass('container');
-    }else{
+    } else {
       console.log('second')
       $('body').find('.main-container').removeClass('container');
     }
   });
-  $(window).on('resize load', function(){
-    if($(window).width() <= 1024){
+  $(window).on('resize load', function () {
+    if ($(window).width() <= 1024) {
       $('body').find('.service-section').addClass('container');
     }
   });
