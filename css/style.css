@@ -159,7 +159,7 @@ a:hover::after {
 
 /* responsive part  */
 .site-mobile-menu {
-  width: 300px;
+  width: 225px;
   position: fixed;
   right: 0;
   z-index: 2000;
@@ -187,17 +187,14 @@ a:hover::after {
   float: left;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 4px;
 }
 
-.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close {
-  float: right;
-  margin-top: 8px;
-}
+
 
 .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span {
   font-size: 30px;
   display: inline-block;
-  padding-left: 10px;
   padding-right: 0px;
   line-height: 1;
   cursor: pointer;
@@ -232,7 +229,7 @@ a:hover::after {
 .site-mobile-menu .site-mobile-menu-body {
   overflow-y: scroll;
   position: relative;
-  padding: 0 20px 20px 20px;
+  padding: 0px 16px 20px 73px;
   height: calc(100vh - 52px);
   padding-bottom: 150px;
   line-height: 45px;
@@ -260,7 +257,7 @@ a:hover::after {
 
 .site-mobile-menu .site-nav-wrap .arrow-collapse {
   position: absolute;
-  right: 17px;
+  right: 10px;
   top: 17px;
   z-index: 20;
   width: 30px; 
@@ -282,8 +279,8 @@ a:hover::after {
   font-family: "icomoon";
   content: "\f077";
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 41%;
+  left: 200%;
   -webkit-transform: translate(-50%, -50%) rotate(-180deg);
   -ms-transform: translate(-50%, -50%) rotate(-180deg);
   transform: translate(-50%, -50%) rotate(-180deg);
@@ -306,17 +303,19 @@ a:hover::after {
 }
 
 .site-mobile-menu .site-nav-wrap>li>a {
-  font-size: 20px;
-  padding: 10px 20px;
+  font-size:16px;
+  padding: 10px 0;
   display: block;
   position: relative;
   color: #0E4072 !important;
+  text-align: right;
 }
 
 .site-mobile-menu .site-nav-wrap>li>ul {
   padding: 0;
   margin: 0;
   list-style: none;
+  padding-left: 33px;
 }
 
 .site-mobile-menu .site-nav-wrap>li>ul>li {
@@ -327,6 +326,7 @@ a:hover::after {
   padding-left: 40px;
   font-size: 16px;
   color: #0E4072;
+  text-align: right;
 }
 
 .site-mobile-menu .site-nav-wrap>li>ul>li>ul {
@@ -543,8 +543,6 @@ nav ul>li>a:hover:after {
 /* solutions section */
 
 .solution-container {
-  /* max-width: 1036px;
-  width: 100%; */
   margin-top: 35px;
   margin-bottom: 96px;
 }
@@ -598,21 +596,15 @@ body {
 
 .link-sol {
   padding: 0 !important;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
-
-
-
+ 
 .nav-btn::after,
 .contact-link::after {
   transform: scaleX(0) !important;
 }
-
-/* .common-container {
-  margin-right: 202px;
-  margin-left: 202px;
-} */
-
+ 
+ 
 /* contact us */
 .contact-section {
   margin-top: 46px; 
@@ -751,13 +743,7 @@ body {
 }
 
 
-.site-mobile-menu .site-nav-wrap>li>ul {
-  padding-left: 45px;
-}
 
-.site-mobile-menu .site-nav-wrap>li>ul>li>a {
-  font-size: 20px !important;
-}
 
 .carousel-item img {
   min-height: 150px;
@@ -839,23 +825,6 @@ footer .menu a {
   font-style: normal;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
 .icon-menu:before {
   content: "\e5d2";
 }
@@ -867,7 +836,8 @@ footer .menu a {
 }
 
 
-/* font-style-1 */
+
+/* style-1 */
 @media (max-width: 350px) {
   .site-navbar {
     padding: 0;
@@ -875,6 +845,14 @@ footer .menu a {
 
   .menu {
     flex-direction: column;
+  }
+  .toggle-button a{
+    padding-right: 0px !important;
+  }
+  .site-mobile-menu .site-nav-wrap .arrow-collapse:before{
+    right: 0;
+    left: 259%;
+
   }
 }
 
@@ -998,15 +976,15 @@ footer .menu a {
   }
 
   .site-logo a {
-    font-size: 24px;
+    font-size: 20px;
     display: flex;
     align-items: center;
   }
 
-  .site-logo img {
+  /* .site-logo img {
     height: 52px;
     width: 75px;
-  }
+  } */
 
   .nav-container {
     padding: 10px;
@@ -1015,6 +993,7 @@ footer .menu a {
   .site-mobile-menu .site-nav-wrap>li>a {
     font-size: 16px;
     padding: 10px 6px;
+    white-space: nowrap;
   }
 
   .site-mobile-menu .site-nav-wrap .arrow-collapse {
@@ -1121,8 +1100,8 @@ footer .menu a {
   }
 
   .main-container {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 16px;
+    margin-left: 16px;
 }
 }
 
@@ -1173,4 +1152,3 @@ footer .menu a {
     margin: auto;
   }
 }
-
