@@ -266,12 +266,13 @@ a:hover::after {
   cursor: pointer;
   border-radius: 50%;
   color: #0E4072;
+  background: transparent;
 }
 
 
-.site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
+/* .site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
   background: #f8f9fa;
-}
+} */
 
 .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
   font-size: 12px;
@@ -1150,5 +1151,11 @@ footer .menu a {
     max-width: 1036px;
     width: 100%;
     margin: auto;
+  }
+}
+@media (max-width: 400px) {
+  .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
+    top: 53%;
+    left: 267%;
   }
 }
