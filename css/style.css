@@ -686,6 +686,8 @@ body {
   text-align: center;
   color: #1A1B1F;
   margin-bottom: 56px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .home-desc p {
@@ -693,8 +695,9 @@ body {
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 1px;
-  text-align: center;
+  text-align: start;
   padding: 10px 0;
+  text-align-last: center;
 
 }
 
@@ -751,8 +754,8 @@ body {
 
 
 
-.carousel-item img {
-  min-height: 150px;
+.item img {
+  min-height: 200px;
   width: 100% !important;
 }
 
@@ -789,35 +792,57 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  padding: 12px 0;
+  padding: 29px 0 0;
   background: #000;
+}
+
+.menu {
+  /* margin-right: 344px;
+  margin-left: 344px;
+  column-gap: 117px; */
+  max-width: 724px;
+  margin-left: 25px;
+  margin-right: 25px;
+  max-width: 724px;
+  width: 100%;
+  margin-bottom: 105px;
 }
 
 footer .menu a {
   color: #ffff;
-  letter-spacing: 1px;
   font-size: 14px;
   font-weight: normal;
   line-height: 56px;
   letter-spacing: 0.101em;
-
+  text-wrap: nowrap;
 
 }
 
+.text-carousel {
+  background: #000;
+  padding: 21px 16px 21px 0;
+}
+
 .carousel-text {
+
   position: absolute;
   right: 50%;
-  left: 40px;
+
   z-index: 11;
   padding-top: 0;
   color: #fff;
-  top: 38px;
-  font-size: 32px;
+
+  font-size: 28px;
   font-weight: 900;
-  line-height: 39.01px;
+  line-height: 34.13px;
   letter-spacing: 1px;
   text-align: left;
   white-space: nowrap;
+  background: #000;
+  padding: 21px 16px;
+  min-width: 327px;
+  left: 36px;
+  bottom: 36px;
 }
 
 @font-face {
@@ -997,12 +1022,15 @@ footer .menu a {
   }
 
 }
+
 .first-service {
   margin-bottom: 74px;
 }
-.service-sub-titles{
+
+.service-sub-titles {
   margin: 20px 0;
 }
+
 @media (max-width: 450px) {
   .menu {
     flex-direction: column;
@@ -1112,18 +1140,22 @@ footer .menu a {
     margin-bottom: 0;
     display: block;
   }
+
   .first-service {
     margin-bottom: 20px !important;
   }
-  .service-images{
+
+  .service-images {
     margin-bottom: 24px;
   }
-  .service-sub-titles{
+
+  .service-sub-titles {
     margin: 20px 0 20px;
     font-weight: 500;
     font-size: 16px !important;
   }
-  .mb-20{
+
+  .mb-20 {
     margin-bottom: 20px;
   }
 }
@@ -1159,15 +1191,36 @@ footer .menu a {
   /* home */
   .carousel-text {
     font-size: 16px !important;
-    line-height: 34.07px !important;
-    left: 20px !important;
-    top: 100px !important;
+    line-height: 12.07px !important;
+    min-width: 211px;
+    left: 8px;
+    bottom: 16px;
+    padding: 16px 16px 16px 16px;
   }
+
+  .text-carousel {
+
+    padding: 12px 8px 12px 0;
+
+  }
+
+  .item img {
+    min-height: 153px;
+  }
+
+  .home-desc p {
+    text-align: justify;
+  }
+
 
   .main-container {
     margin-right: 16px;
     margin-left: 16px;
   }
+
+  /* .home-dec-mobile {
+    text-align: center !important;
+  } */
 }
 
 @media (max-width:627px) {
@@ -1188,6 +1241,9 @@ footer .menu a {
     max-width: 600px;
   }
 
+  .home-desc {
+    padding: 0;
+  }
 
 }
 
@@ -1225,4 +1281,12 @@ footer .menu a {
     top: 53%;
     left: 267%;
   }
+}
+.footer-sub-div{
+  color: #ffff;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 56px;
+    letter-spacing: 0.101em;
+    text-wrap: nowrap;
 }

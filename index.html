@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="/css/style-1.css">
     <link rel="stylesheet" href="font-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +13,35 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+        integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+        integrity="sha512-f28cvdA4Bq3dC9X9wNmSx21rjWI+5piIW/uoc2LuQ67asKxfQjUow2MkcCNcfJiaLrHcGbed1wzYe3dlY4w9gA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #owl-demo .item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .owl-theme .owl-controls {
+            margin-top: 16px;
+        }
+
+        .owl-theme .owl-controls .owl-page span {
+            background: #000;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #34c230;
+        }
+
+
+        .owl-theme .owl-controls {
+            margin-top: 16px;
+        }
+    </style>
 </head>
 
 <body>
@@ -42,7 +70,7 @@
                     <li class="has-children"> <!-- sub menu-->
                         <a id="sub" class="nav-link nav-btn links">PRODUCTS</a>
                         <ul class="dropdown arrow-top">
-                            <li><a href="solutions.html" class="nav-link links link-sol pb-1">Solutions</a></li>
+                            <li><a href="solutions.html" class="nav-link links link-sol ">Solutions</a></li>
                             <li><a href="projects.html" class="nav-link links pb-1 p-0">Projects</a></li>
                         </ul>
                     </li>
@@ -62,33 +90,65 @@
     <!-- image silder start  -->
     <div class="main-container">
 
-        <div id="carouselExampleControls" class="carousel slide p-0 w-100 " data-ride="carousel" data-interval="5000">
+        <!-- <div id="carouselExampleControls" class="carousel slide p-0 w-100 " data-ride="carousel" data-interval="5000">
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="images/home-3.jpg" class="d-block" width="100%">
                     <div class="carousel-text text-nowrap">
-                        Embedded Solutions and Services
+                        Embedded Solutions and Services</span>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/home-1.jpg" class="d-block" width="100%">
                     <div class="carousel-text text-start">
-                        Financial Services
+                        Financial Services</span>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/home-2.jpg" class="d-block" width="100%">
                     <div class="carousel-text">
-                        Defense
+                        Defense</span>
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <img src="images/home-4.jpg" class="d-block" width="100%">
                     <div class="carousel-text">
-                        Healthcare
+                        Healthcare</span>
                     </div>
+                </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+        </div> -->
+        <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="images/home-3.jpg" class="d-block" width="100%">
+                <div class="carousel-text text-nowrap">
+                    <span class="text-carousel"> Embedded Solutions and Services</span>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/home-1.jpg" class="d-block" width="100%">
+                <div class="carousel-text text-start">
+                    Financial Services
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/home-2.jpg" class="d-block" width="100%">
+                <div class="carousel-text">
+                    Defence
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/home-4.jpg" class="d-block" width="100%">
+                <div class="carousel-text">
+                    Healthcare
                 </div>
             </div>
 
@@ -97,39 +157,43 @@
             <div class="home-title"> Who we are </div>
 
             <div class="home-desc">
-                <p  style="padding-top: 10px;"> We are a technology integrator company offering services and turnkey solutions in the
-                    Embedded
-                    Systems
-                    domain. </p>
+                <p style="padding-top: 10px"> We are a
+                    technology integrator company offering services and turnkey solutions in the
+                    Embedded Systems domain </p>
 
                 <p> Our expertise's encompasses hardware and software engineering </p>
-                <p> We tailor our services to suite the specific needs of our customer. </p>
+                <p> We tailor our services to suite the specific needs of our customer </p>
 
 
 
-                <p class="mb-0 pb-0"> Our main goal has and continues to be, building and sustaining a robust portfolio of satisfied
+                <p class="mb-0 pb-0">Our main goal has
+                    and continues to be, building and sustaining a robust portfolio of satisfied
                     customers
-                    through consistently delivering top-quality services and reliable solutions.</p>
+                    through consistently delivering top-quality services and reliable solutions</p>
 
             </div>
             <div>
                 <div class="home-title">
                     What we do</div>
                 <div class="home-desc">
-                    <p> Our work actively involves systems containing programmable electronics </p>
+                    <p class="home-dec-mobile">Our work actively involves systems containing programmable electronics
+                    </p>
 
-                    <p > Our experience in solution delivery spans across a breadth of Industries such as Defense,
+                    <p>Our experience in solution delivery spans across a breadth of Industries such as Defense,
                         Aerospace,
-                        Automation and Healthcare. </p>
+                        Automation and Healthcare</p>
 
                 </div>
             </div>
         </div>
     </div>
-    <footer class="w-100">
-        <div class="d-flex container justify-content-between menu">
+    <footer class="w-100 d-flex justify-content-center">
+        <div class="d-flex justify-content-between menu">
             <a href="about.html">ABOUT US</a>
-            <a href="solutions.html">SOLUTIONS</a>
+            <ul class="footer-sub-div d-flex flex-column">SOLUTIONS
+                <a href="solutions.html"></a>
+                <a href="projects.html"></a>
+            </ul>
             <a href="service.html">SERVICES</a>
             <a class="mb-0" href="contact.html">CONTACT US</a>
             <div class="icon-linkedin-square h4  d-none">
@@ -150,6 +214,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+        integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".owl-carousel").owlCarousel({
+
+                autoPlay: 50000, //Set AutoPlay to 3 seconds
+                loop: true,
+                items: 4,
+                singleItem: true
+            });
+
+        });
+    </script>
 </body>
 
 </html>
