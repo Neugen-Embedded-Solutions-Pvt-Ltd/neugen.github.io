@@ -102,9 +102,9 @@ $(document).ready(function () {
       $('body').find('.main-container').removeClass('container');
     }
   });
-  $(window).on('resize load', function () {
-    if ($(window).width() <= 1024) {
-      $('body').find('.service-section').addClass('container');
-    }
-  });
+  // $(window).on('resize load', function () {
+  //   if ($(window).width() <= 1024) {
+  //     $('body').find('.service-section').addClass('container');
+  //   }
+  // });
 });
