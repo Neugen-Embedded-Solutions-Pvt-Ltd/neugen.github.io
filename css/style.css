@@ -852,7 +852,7 @@ footer .menu a {
   position: absolute;
   right: 50%;
   z-index: 11;
-  
+
   color: #fff;
   white-space: nowrap;
   background: #000;
@@ -930,10 +930,7 @@ footer .menu a {
   .service-desc {
     padding: 0 10px;
   }
-
-  .address-row {
-    flex-direction: column;
-  }
+ 
 
 
   .contact-description div {
@@ -1008,22 +1005,17 @@ footer .menu a {
   }
 }
 
+
 @media (max-width: 991.98px) {
-
-
   .logo {
     margin: 0 10px 0 30px;
   }
-}
 
-@media (max-width: 991.98px) {
   .site-navbar .site-logo {
     float: left;
     position: relative;
   }
-}
 
-@media (max-width: 991.98px) {
   .sticky-wrapper .shrink {
     padding-top: 30px !important;
     padding-bottom: 30px !important;
@@ -1082,7 +1074,7 @@ footer .menu a {
 
   .contact-section {
     margin-top: 20px;
-    margin-inline: 16px !important;
+
   }
 
   .about-section {
@@ -1105,9 +1097,6 @@ footer .menu a {
     margin-top: 24px;
   }
 
-  .home-desc {
-    margin-bottom: 24px;
-  }
 
   .about-us-heading {
     font-size: 20px;
@@ -1163,9 +1152,11 @@ footer .menu a {
     margin-bottom: 20px !important;
     padding: 0;
   }
-.service-detail{
-  padding: 0 !important;
-}
+
+  .service-detail {
+    padding: 0 !important;
+  }
+
   .service-images {
     margin-bottom: 24px;
   }
@@ -1178,6 +1169,16 @@ footer .menu a {
 
   .mb-20 {
     margin-bottom: 20px;
+  }
+
+  .contact-description {
+    margin-bottom: 32px;
+    padding: 0 10px;
+  }
+
+  .address-row {
+    padding: 0 10px !important;
+    flex-direction: column;
   }
 }
 
@@ -1241,8 +1242,12 @@ footer .menu a {
 
 
   .main-container {
-    margin-right: 16px;
-    margin-left: 16px;
+    margin-right: 16px !important;
+    margin-left: 16px !important;
+  }
+
+  .about-us-content {
+    padding: 0 10px;
   }
 
   /* .home-dec-mobile {
@@ -1285,6 +1290,9 @@ footer .menu a {
     text-align: justify;
   }
 
+  .about-us-content {
+    padding: 0 15px;
+  }
 }
 
 @media (max-width:990px) {
@@ -1343,3 +1351,13 @@ footer .menu a {
 /* .office-detail {
   max-width: 641px;
 } */
+@media (max-width:500px) {
+  .home-desc {
+    margin-bottom: 24px;
+    padding-inline: 10px;
+  }
+}
+
+.owl-carousel .owl-item {
+  width: 314px;
+}
