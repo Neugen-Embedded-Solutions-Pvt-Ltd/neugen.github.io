@@ -94,7 +94,7 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $(window).on('resize load', function () {
-    if ($(window).width() > 1440 || $(window).width() < 406) {
+    if ($(window).width() > 1440 ) { //|| $(window).width() < 500
       console.log('first')
       $('body').find('.main-container').addClass('container');
     } else {
@@ -102,9 +102,15 @@ $(document).ready(function () {
       $('body').find('.main-container').removeClass('container');
     }
   });
-  // $(window).on('resize load', function () {
-  //   if ($(window).width() <= 1024) {
-  //     $('body').find('.service-section').addClass('container');
-  //   }
-  // });
+});
+$(document).ready(function () {
+
+  $(".owl-carousel").owlCarousel({
+
+      autoPlay: 300000, //Set AutoPlay to 3 seconds
+      loop: true,
+      items: 1,
+      singleItem: true
+  });
+
 });

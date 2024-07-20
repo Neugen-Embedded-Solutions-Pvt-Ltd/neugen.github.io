@@ -41,7 +41,7 @@
     <!-- responsive button content load end -->
     <header class="site-navbar js-sticky-header site-navbar-target p-0" role="banner">
 
-        <div class="d-flex align-items-center nav-container main-container py-3">
+        <div class="d-flex align-items-center nav-container mains-container py-3">
             <div class="site-logo">
                 <a class="navbar-brand nav-link mr-0" href="index.html">
                     <img src="images/Neugen_Logo.png" class="d-inline-block" alt="">Neugen
@@ -67,6 +67,7 @@
             </div>
         </div>
     </header>
+
     <div class="service-section common-container main-container">
         <div class="justify-content-center d-flex service-title">
             SERVICES
@@ -145,15 +146,22 @@
         </div>
     </div>
 
-    <footer class="w-100">
-        <div class="d-flex container justify-content-between menu">
+    <footer class="w-100 d-flex justify-content-center">
+        <div class="d-flex justify-content-between menu">
             <a href="about.html">ABOUT US</a>
-            <a href="solutions.html">PRODUCTS</a>
+
+            <ul class="footer-sub-div d-flex flex-column">
+                <li> PRODUCTS</li>
+                <a class="subdiv-link mb-4" href="solutions.html">Solutions</a>
+                <a class="subdiv-link" href="projects.html">Projects</a>
+            </ul>
+
             <a href="service.html">SERVICES</a>
             <a class="mb-0" href="contact.html">CONTACT US</a>
-            <div class="icon-linkedin-square h4 d-none">
 
-            </div>
+        </div>
+        <div class="d-flex justify-content-center social-media-links">
+            <a href="#" target="_blank"><img src="images/linked-icon.png" alt=""></a>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
