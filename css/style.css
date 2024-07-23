@@ -1255,7 +1255,9 @@ body {
   .mb-20 {
     margin-bottom: 20px;
   }
-
+  .project-1-content{
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 400px) {
