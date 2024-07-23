@@ -472,6 +472,7 @@ nav ul>li>a:hover:after {
   line-height: 32px;
   letter-spacing: 0.07em;
   padding: 0 48px;
+  text-align: center;
 }
 
 .sol-sec-4 {
@@ -745,9 +746,9 @@ body {
   padding: 0 48px;
 
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 32px;
   text-align: left;
 
 }
@@ -1020,7 +1021,7 @@ body {
   }
 
   footer .social-media-links {
-    margin-block: 21px;
+    margin-block: 16px !important;
   }
 
   .footer-sub-div .subdiv-link {
@@ -1037,7 +1038,7 @@ body {
   }
 
   .address-row {
-    padding-inline: 10px;
+    padding-inline: 10px !important;
   }
 
   .service-desc {
@@ -1076,9 +1077,9 @@ body {
 }
 
 @media (max-width: 460px) {
-  .sol-img {
+  /* .sol-img {
     max-width: 374px !important;
-  }
+  } */
 
   /* project */
   .rocket-box {
@@ -1105,15 +1106,17 @@ body {
   .carousel-text {
     font-size: 16px !important;
     line-height: 12.07px !important;
-    min-width: 211px;
+    min-width: 96px;
     left: 8px;
     bottom: 16px;
-    padding: 16px 15px;
+     padding: 12px;
   }
-
+.carousel-long-text{
+  min-width: 180px !important;
+}
   .text-carousel {
 
-    padding: 12px 8px 12px 0;
+    padding:  0;
 
   }
 
@@ -1123,8 +1126,8 @@ body {
 
 
   .mains-container {
-    margin-right: 16px !important;
-    margin-left: 16px !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
   }
 
   .about-us-content {
@@ -1211,7 +1214,7 @@ body {
   .project-1-title {
     margin: 24px 0 20px;
     font-size: 16px;
-    text-align: justify;
+    text-align: center;
   }
 
   .service-desc {
@@ -1258,6 +1261,15 @@ body {
   .project-1-content{
     padding: 0 10px;
   }
+  .rocket-box img{
+    max-width: 100% !important;
+  }
+  .site-mobile-menu .site-nav-wrap>li>a.contact-link{
+    background-color: #000;
+    color: #fff !important;
+    padding: 6px 11px ;
+    margin-top: 8px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1295,7 +1307,8 @@ body {
   }
 
   .pro-sec-1 {
-    padding: 0 15px;
+    padding: 0 0px;
+
   }
 
   .solution-title {
@@ -1304,6 +1317,7 @@ body {
 
   .solution-title p {
     font-size: 20px;
+    margin-bottom: 0 !important;
   }
 
   .pro-sec-1 {
@@ -1313,15 +1327,17 @@ body {
 
 
   .site-logo a {
-    font-size: 20px;
+    font-size: 24px;
     display: flex;
     align-items: center;
   }
 
   .nav-container {
-    padding: 10px;
+    padding: 0;
   }
-
+  .toggle-button a{
+    padding-right: 0 !important;
+  }
   .site-mobile-menu .site-nav-wrap>li>a {
     font-size: 16px;
     padding: 10px 6px;
@@ -1352,7 +1368,7 @@ body {
   }
 
   .sol-img {
-    max-width: 285px !important;
+    /* max-width: 285px !important; */
     width: 100%;
   }
 

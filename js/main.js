@@ -107,7 +107,7 @@ $(document).ready(function () {
 
   $(".owl-carousel").owlCarousel({
 
-      autoPlay: 300000, //Set AutoPlay to 3 seconds
+      autoPlay: 5000, //Set AutoPlay to 5 seconds
       loop: true,
       items: 1,
       singleItem: true
