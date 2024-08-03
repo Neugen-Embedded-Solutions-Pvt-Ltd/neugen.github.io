@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="/images/neugen-logo.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,29 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
         integrity="sha512-f28cvdA4Bq3dC9X9wNmSx21rjWI+5piIW/uoc2LuQ67asKxfQjUow2MkcCNcfJiaLrHcGbed1wzYe3dlY4w9gA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        #owl-demo .item img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        .owl-theme .owl-controls {
-            margin-top: 16px;
-        }
-
-        .owl-theme .owl-controls .owl-page span {
-            background: #000;
-            width: 20px;
-            height: 20px;
-            border: 2px solid #34c230;
-        }
-
-
-        .owl-theme .owl-controls {
-            margin-top: 16px;
-        }
-    </style>
+        
 </head>
 
 <body>
@@ -170,7 +149,7 @@
             <a href="#" target="_blank"><img src="images/linked-icon.png" alt=""></a>
         </div>
     </footer>
-     
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -187,7 +166,17 @@
         integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+        $(document).ready(function () {
 
+            $(".owl-carousel").owlCarousel({
+
+                autoPlay: 5000, //Set AutoPlay to 5 seconds
+                loop: true,
+                items: 1,
+                singleItem: true
+            });
+
+        });
     </script>
 </body>
 

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 body {
   margin: 0;
   padding: 0;
@@ -968,7 +967,30 @@ footer .social-media-links {
   max-width: 32px;
   width: 100%;
 }
+.about-body{
+  height: 100vh;display: flex;flex-direction: column
+}
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
+.owl-theme .owl-controls {
+  margin-top: 16px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  background: #000;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #34c230;
+}
+
+
+.owl-theme .owl-controls {
+  margin-top: 16px;
+}
 @media (min-width:1441px) {
   .common-container {
     max-width: 1036px;

@@ -103,14 +103,3 @@ $(document).ready(function () {
     }
   });
 });
-$(document).ready(function () {
-
-  $(".owl-carousel").owlCarousel({
-
-      autoPlay: 5000, //Set AutoPlay to 5 seconds
-      loop: true,
-      items: 1,
-      singleItem: true
-  });
-
-});
