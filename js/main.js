@@ -1,14 +1,14 @@
 $(document).ready(function () {
 
-  var siteSticky = function () {
+  let siteSticky = function () {
     $(".js-sticky-header").sticky({ topSpacing: 0 });
   };
   siteSticky();
 
-  var siteMenuClone = function () {
+  let siteMenuClone = function () {
 
     $('.js-clone-nav').each(function () {
-      var $this = $(this);
+      let $this = $(this);
       $this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
     });
 
@@ -16,9 +16,9 @@ $(document).ready(function () {
     setTimeout(function () {
 
 
-      var counter = 1;
+      let counter = 1;
       $('.site-mobile-menu .has-children').each(function () {
-        var $this = $(this);
+        let $this = $(this);
 
         $this.prepend('<a class="arrow-collapse"></a>');
 
@@ -42,7 +42,7 @@ $(document).ready(function () {
     }, 1000);
 
     $('body').on('click', '.arrow-collapse', function (e) {
-      var $this = $(this);
+      let $this = $(this);
       console.log('clicked')
       if ($this.closest('li').find('.collapse').hasClass('show')) {
         $this.removeClass('active');
@@ -56,7 +56,7 @@ $(document).ready(function () {
     });
 
     $(window).resize(function () {
-      var $this = $(this),
+      let $this = $(this),
         w = $this.width();
 
       if (w > 768) {
@@ -67,7 +67,7 @@ $(document).ready(function () {
     })
 
     $('body').on('click', '.js-menu-toggle', function (e) {
-      var $this = $(this);
+      let $this = $(this);
       e.preventDefault();
 
       if ($('body').hasClass('offcanvas-menu')) {
@@ -81,7 +81,7 @@ $(document).ready(function () {
 
     // click outisde offcanvas
     $(document).mouseup(function (e) {
-      var container = $(".site-mobile-menu");
+      let container = $(".site-mobile-menu");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($('body').hasClass('offcanvas-menu')) {
           $('body').removeClass('offcanvas-menu');
