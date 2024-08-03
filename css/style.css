@@ -986,10 +986,12 @@ footer .social-media-links {
   height: 20px;
   border: 2px solid #34c230;
 }
-
-
+ 
 .owl-theme .owl-controls {
   margin-top: 16px;
+}
+.bolded-text{
+  font-weight: 500;
 }
 @media (min-width:1441px) {
   .common-container {
