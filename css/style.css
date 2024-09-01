@@ -951,10 +951,12 @@ footer .social-media-links {
   border-radius: 50%;
   background-color: #665e5e !important;
   border: 0 !important;
+  margin-right: 5px !important;
+  margin-left: 5px !important;
 }
 
 .carousel-indicators {
-  bottom: -18% !important;
+  top: 106% !important;
 }
 
 .carousel-indicators li.active {
@@ -1157,8 +1159,9 @@ footer .social-media-links {
     padding-bottom: 6px !important;
   }
 
-  .carousel-indicators {
-    bottom: -20% !important;
+  .carousel-indicators {  
+      top: 117% !important;
+  
     margin-bottom: 0 !important;
   }
 }
