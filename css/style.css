@@ -1120,6 +1120,7 @@ footer .social-media-links {
     width: 6% !important;
     padding: .5rem !important;
     height: 30px;
+    border-radius: 6px;
   }
 }
 
