@@ -422,10 +422,6 @@ nav ul>li>a:hover:after {
   letter-spacing: 0.07em;
 }
 
-#carouselExampleIndicators span {
-  width: 50px;
-  height: 50px;
-}
 
 .site-navbar .site-navigation .site-menu li a.contact-link {
   background-color: var(--color-black);
@@ -903,7 +899,7 @@ footer .social-media-links {
   text-align: start !important;
   background-color: rgba(0, 0, 0, 0.61);
   top: 50%;
-  left: 30%;
+  left: 32%;
   transform: translate(-50%, -50%);
   width: 50%;
   padding: 1rem;
@@ -952,6 +948,33 @@ footer .social-media-links {
 .contact-detail {
   margin-bottom: 24px;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 2.61) !important;
+  width: 5% !important;
+  padding: .5rem !important;
+  height: 47px;
+  border-radius: 10px;
+}
+
+.carousel-control-prev {
+  transform: translate(-50%, -50%) !important;
+  left: 4% !important;
+  top: 50% !important;
+}
+
+.carousel-control-next {
+  transform: translate(-50%, -50%) !important;
+  right: -2% !important;
+  top: 50% !important;
+}
+
+#carouselExampleIndicators span {
+  width: 20px;
+  height: 20px;
+}
+
 
 @media (min-width:1441px) {
   .common-container {
@@ -1090,6 +1113,14 @@ footer .social-media-links {
     right: -18%;
     padding: .5rem;
   }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.61) !important;
+    width: 6% !important;
+    padding: .5rem !important;
+    height: 30px;
+  }
 }
 
 @media (max-width:627px) {
@@ -1134,6 +1165,9 @@ footer .social-media-links {
     line-height: 16px;
   }
 
+  .carousel-captions {
+    width: 84%;
+  }
 }
 
 @media (max-width:500px) {
@@ -1269,8 +1303,8 @@ footer .social-media-links {
 
   .financial-captions {
     padding: .5rem;
-    width: 70% !important;
-    left: 38%;
+    width: 67% !important;
+    left: 41%;
   }
 
   .carousel-subtitle {
@@ -1278,9 +1312,9 @@ footer .social-media-links {
   }
 
   .health-care-captions {
-    width: 70% !important;
+    width: 66% !important;
     padding: .5rem;
-    right: -29%;
+    right: -25%;
   }
 }
 
@@ -1529,6 +1563,12 @@ footer .social-media-links {
 
   .carousel-indicators {
     top: 108% !important;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    padding: .25rem !important;
+    height: 21px;
   }
 
 }
