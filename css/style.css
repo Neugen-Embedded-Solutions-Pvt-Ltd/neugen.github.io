@@ -85,7 +85,7 @@ a:hover::after {
 }
 
 .site-logo img {
-  max-width: 48px;
+  max-width:70px;
   width: 100%;
 }
 
@@ -416,7 +416,7 @@ nav ul>li>a:hover:after {
 
 .site-logo a {
   color: var(--nav-btn-color) !important;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: var(--font-weight-medium);
   padding: 0 !important;
   letter-spacing: 0.07em;
@@ -428,6 +428,7 @@ nav ul>li>a:hover:after {
   color: var(--color-white) !important;
   padding: 14px 13px !important;
   margin-right: 0 !important;
+  border-radius: 8px;
 }
 
 .about-section {
@@ -876,7 +877,7 @@ footer .social-media-links {
   left: 50%;
   bottom: 8%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.61);
+  background-color: rgba(0, 0, 0, 0.70);
   width: 60%;
   padding: 1rem;
 
@@ -886,22 +887,22 @@ footer .social-media-links {
 .health-care-captions {
   color: var(--color-white);
   text-align: start !important;
-  background-color: rgba(0, 0, 0, 0.61);
+  background-color: rgba(0, 0, 0, 0.70);
   top: 50%;
-  right: -12%;
+  right: -10%;
   transform: translate(-50%, -50%);
-  width: 35%;
+  width: 24%;
   padding: 1rem;
 }
 
 .financial-captions {
   color: var(--color-white);
   text-align: start !important;
-  background-color: rgba(0, 0, 0, 0.61);
+  background-color: rgba(0, 0, 0, 0.70);
   top: 50%;
-  left: 32%;
+  left: 14%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 26%;
   padding: 1rem;
 
 }
@@ -1047,6 +1048,10 @@ footer .social-media-links {
 
   }
 
+  .financial-captions {
+    width: 28%;
+    left: 16%;
+  }
 }
 
 @media (max-width:769px) {
@@ -1106,11 +1111,12 @@ footer .social-media-links {
 
   .financial-captions {
     padding: .5rem;
+    width: 36%;
+    left: 20%;
   }
 
   .health-care-captions {
-    width: 50%;
-    right: -18%;
+    width: 28%;
     padding: .5rem;
   }
 
@@ -1152,12 +1158,13 @@ footer .social-media-links {
   .financial-captions {
     padding: .5rem;
     width: 57%;
+    left: 30%;
   }
 
   .health-care-captions {
     padding: .5rem;
-    width: 57%;
-    right: -24%;
+    width: 43%;
+    right: -18%;
   }
 
   .carousel-text {
@@ -1303,19 +1310,19 @@ footer .social-media-links {
 
   .financial-captions {
     padding: .5rem;
-    width: 67% !important;
-    left: 41%;
+    width: 71% !important;
+    left: 37%;
   }
 
   .carousel-subtitle {
     font-size: 12px;
   }
-
   .health-care-captions {
     width: 66% !important;
     padding: .5rem;
-    right: -25%;
+    right: -29%;
   }
+
 }
 
 @media (max-width: 450px) {
@@ -1491,7 +1498,7 @@ footer .social-media-links {
   }
 
   .site-logo a {
-    font-size: 24px;
+    font-size: 22px;
     display: flex;
     align-items: center;
   }
@@ -1570,5 +1577,14 @@ footer .social-media-links {
     padding: .25rem !important;
     height: 21px;
   }
-
+  .health-care-captions {
+    width: 66% !important;
+    padding: .5rem;
+    right: -25%;
+  }
+  .financial-captions {
+    padding: .5rem;
+    width: 67% !important;
+    left: 37%;
+  }
 }
