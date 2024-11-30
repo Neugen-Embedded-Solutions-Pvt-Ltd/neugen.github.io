@@ -872,54 +872,44 @@ footer .social-media-links {
 }
 
 .carousel-captions {
-  color: var(--color-white);
-  text-align: start !important;
+  color: var(--color-white); 
   left: 50%;
-  bottom: 8%;
+  bottom: 29px;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.70);
-  width: 60%;
-  padding: 1rem;
-
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 66%;
+  padding: 30px 47px; 
 }
-
-
-.health-care-captions {
-  color: var(--color-white);
-  text-align: start !important;
-  background-color: rgba(0, 0, 0, 0.70);
-  top: 50%;
-  right: -10%;
-  transform: translate(-50%, -50%);
-  width: 24%;
-  padding: 1rem;
-}
+ 
 
 .financial-captions {
   color: var(--color-white);
   text-align: start !important;
-  background-color: rgba(0, 0, 0, 0.70);
+  background-color: rgba(0, 0, 0, 0.65);
   top: 50%;
-  left: 14%;
-  transform: translate(-50%, -50%);
-  width: 26%;
-  padding: 1rem;
-
+  left: 96px;
+  transform: translate(0, -50%);
+  width: 24%;
+  padding: 31px 39px;
+ 
 }
 
 .carousel-text {
   color: var(--color-white);
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 35px;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 40px;
   letter-spacing: 1px;
   margin-bottom: .5rem;
+  text-wrap: nowrap;
 }
-
+.financial-captions .carousel-text { 
+  font-size: 25px !important;
+}
 .carousel-subtitle {
   font-size: 16px;
-  font-weight: 400;
-  text-align: start;
+  font-weight: 100; 
+  line-height: 32px;
 }
 
 .carousel-indicators li {
@@ -951,23 +941,23 @@ footer .social-media-links {
 }
 
 .carousel-control-prev,
-.carousel-control-next {
-  background-color: rgba(0, 0, 0, 2.61) !important;
+.carousel-control-next { 
   width: 5% !important;
   padding: .5rem !important;
   height: 47px;
   border-radius: 10px;
+  opacity: 1 !important;
 }
 
 .carousel-control-prev {
-  transform: translate(-50%, -50%) !important;
-  left: 4% !important;
+  transform: translate(0%, -50%) !important;
+  left: 30px !important;
   top: 50% !important;
 }
 
 .carousel-control-next {
-  transform: translate(-50%, -50%) !important;
-  right: -2% !important;
+  transform: translate(0, -50%) !important;
+  right: 60px !important;
   top: 50% !important;
 }
 
@@ -976,6 +966,10 @@ footer .social-media-links {
   height: 20px;
 }
 
+.carousel-item img {
+ min-height: 380px;
+ 
+}
 
 @media (min-width:1441px) {
   .common-container {
@@ -1006,10 +1000,6 @@ footer .social-media-links {
   .site-navbar .site-navigation .site-menu>li>a {
     margin-right: 36px !important;
   }
-
-  .carousel-captions {
-    width: 70%;
-  }
 }
 
 @media (max-width: 991.98px) {
@@ -1035,10 +1025,6 @@ footer .social-media-links {
     text-align: center !important;
   }
 
-  .carousel-captions {
-    width: 80%;
-  }
-
   .carousel-text {
     font-size: 16px;
   }
@@ -1047,11 +1033,7 @@ footer .social-media-links {
     font-size: 14px;
 
   }
-
-  .financial-captions {
-    width: 28%;
-    left: 16%;
-  }
+ 
 }
 
 @media (max-width:769px) {
@@ -1090,10 +1072,6 @@ footer .social-media-links {
     padding: 0 !important;
   }
 
-  .carousel-captions {
-    width: 90%;
-  }
-
   .carousel-text {
     font-size: 14px;
     line-height: 20px;
@@ -1108,18 +1086,8 @@ footer .social-media-links {
     height: 100%;
     object-fit: fill;
   }
-
-  .financial-captions {
-    padding: .5rem;
-    width: 36%;
-    left: 20%;
-  }
-
-  .health-care-captions {
-    width: 28%;
-    padding: .5rem;
-  }
-
+ 
+ 
   .carousel-control-prev,
   .carousel-control-next {
     width: 6% !important;
@@ -1151,30 +1119,13 @@ footer .social-media-links {
     margin-left: 20px;
   }
 
-  .carousel-captions {
-    padding: .4rem;
-  }
-
-  .financial-captions {
-    padding: .5rem;
-    width: 57%;
-    left: 30%;
-  }
-
-  .health-care-captions {
-    padding: .5rem;
-    width: 43%;
-    right: -18%;
-  }
-
+ 
+ 
   .carousel-text {
     font-size: 13px;
     line-height: 16px;
   }
 
-  .carousel-captions {
-    width: 84%;
-  }
 }
 
 @media (max-width:500px) {
@@ -1298,31 +1249,17 @@ footer .social-media-links {
     padding: 0 10px;
   }
 
-  .carousel-captions {
-    padding: 0.5rem !important;
-  }
-
   .carousel-item img {
     min-height: 150px;
     height: 100%;
     object-fit: fill;
   }
-
-  .financial-captions {
-    padding: .5rem;
-    width: 71% !important;
-    left: 37%;
-  }
+ 
 
   .carousel-subtitle {
     font-size: 12px;
   }
-  .health-care-captions {
-    width: 66% !important;
-    padding: .5rem;
-    right: -29%;
-  }
-
+ 
 }
 
 @media (max-width: 450px) {
@@ -1577,14 +1514,11 @@ footer .social-media-links {
     padding: .25rem !important;
     height: 21px;
   }
-  .health-care-captions {
-    width: 66% !important;
-    padding: .5rem;
-    right: -25%;
-  }
-  .financial-captions {
-    padding: .5rem;
-    width: 67% !important;
-    left: 37%;
-  }
+  
+ 
+}
+
+.arrow-icon{
+  max-width: 13px;
+  width: 100%;
 }
