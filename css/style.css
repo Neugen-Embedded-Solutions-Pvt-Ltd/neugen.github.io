@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: #FBFCFA !important;
-  font-family: 'Montserrat', sans-serif !important;
 }
 
 * {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -456,12 +455,14 @@ nav ul>li>a:hover:after {
   width: 100%;
   max-height: 450px;
   height: 100%;
+  border-radius: 5px;
 }
 
 .sol-sec-2 img {
   width: 100%;
   max-height: 421px;
   height: 100%;
+  border-radius: 5px;
 }
 
 .project-1-title {
@@ -483,6 +484,7 @@ nav ul>li>a:hover:after {
 
 .services-img img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .service-title {
@@ -585,12 +587,14 @@ nav ul>li>a:hover:after {
   max-width: 1036px;
   width: 100%;
   max-height: 481px;
+  border-radius: 5px;
 }
 
 .sol-img-3 {
   max-width: 317px;
   width: 100%;
   height: 281px;
+  border-radius: 5px;
 }
 
 .rocket-box {
@@ -603,7 +607,8 @@ nav ul>li>a:hover:after {
   min-height: 421px;
   height: 100%;
   width: 100%;
-  max-width: 471px
+  max-width: 471px;
+  border-radius: 5px;
 }
 
 /* project */
@@ -636,8 +641,8 @@ nav ul>li>a:hover:after {
   text-align: center;
   color: #1A1B1F;
   margin-bottom: 56px;
-  padding-left: 48px;
-  padding-right: 48px;
+  /* padding-left: 48px; */
+  /* padding-right: 48px; */
 }
 
 .home-desc p {
@@ -651,11 +656,11 @@ nav ul>li>a:hover:after {
 }
 
 .home-title {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 39.01px;
   letter-spacing: 1px;
   font-weight: var(--font-weight-normal);
-  margin-bottom: 32px;
+  margin-bottom: 8px;
 }
 
 .contact-title {
@@ -725,7 +730,7 @@ nav ul>li>a:hover:after {
 }
 
 .second-container {
-  margin: 40px 79px 56px;
+  margin: 20px 79px 56px;
   font-size: var(--primary-font-size);
   letter-spacing: 1px;
   line-height: 19.5px;
@@ -880,6 +885,7 @@ footer .social-media-links {
   width: 100%;
   height: 164px;
   padding: 20px 47px 8px;
+  border-radius: 4px;
 }
 
 .financial-captions {
@@ -889,8 +895,11 @@ footer .social-media-links {
   top: 50%;
   left: 96px;
   transform: translate(0, -50%);
-  width: 24%;
-  padding: 31px 39px;
+  max-width: 406px;
+  width: 100%;
+  padding: 28px 32px 24px 28px;
+  border-radius: 4px;
+  height: 252px;
 }
 
 .carousel-text {
@@ -901,10 +910,6 @@ footer .social-media-links {
   letter-spacing: 1px;
   margin-bottom: .5rem;
   text-wrap: nowrap;
-}
-
-.financial-captions .carousel-text {
-  font-size: 25px !important;
 }
 
 .carousel-subtitle {
@@ -968,7 +973,7 @@ footer .social-media-links {
 }
 
 .carousel-item img {
-  min-height: 380px;
+  min-height: 360px;
 }
 
 .arrow-icon {

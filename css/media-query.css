@@ -25,8 +25,8 @@
 
 @media (max-width:1440px) {
     .financial-captions {
-        width: 30%;
-        padding: 20px 20px;
+     
+        /* padding: 20px 20px; */
     }
 
     .carousel-captions {
@@ -197,10 +197,7 @@
         width: 55%;
         left: 59px;
     }
-
-    .financial-captions .carousel-text {
-        font-size: 20px !important;
-    }
+ 
 }
 
 @media (max-width:500px) {
@@ -281,10 +278,7 @@
         font-size: 13px;
         line-height: 12px;
     }
-
-    .financial-captions .carousel-text {
-        font-size: 14px !important;
-    }
+ 
 
     .financial-captions {
         padding: 10px 16px;
@@ -567,10 +561,7 @@
         font-size: 9px;
         line-height: 16px;
     }
-
-    .financial-captions .carousel-text {
-        font-size: 10px !important;
-    }
+ 
 
     .financial-captions {
         padding: 7px 13px;
