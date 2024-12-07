@@ -31,8 +31,8 @@
 
     .carousel-captions {
         bottom: 19px;
-        width: 65%;
-        padding: 17px 38px 23px;
+        /* width: 65%; */
+        /* padding: 17px 38px 23px; */
     }
 }
 
@@ -93,7 +93,7 @@
     .carousel-captions {
         bottom: 10px;
         width: 68%;
-        padding: 12px 21px 12px;
+        /* padding: 12px 21px 12px; */
     }
 
     .carousel-text {
