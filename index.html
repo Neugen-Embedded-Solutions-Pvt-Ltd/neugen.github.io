@@ -64,12 +64,6 @@
     <div class="">
         <div class="w-100">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <!-- <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                </ol> -->
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <img class="arrow-icon" src="images/left-vector.png" alt=" left-arrow">
 
@@ -91,8 +85,8 @@
                     </div>
                     <div class="carousel-item">
                         <img src="images/atm-key-board.png" class="d-block w-100" alt="Atm Keyboard">
-                        <div class="position-absolute financial-captions">
-                            <div class="text-carousel carousel-text text-start">Financial Services</div>
+                        <div class="position-absolute carousel-captions text-center">
+                            <div class="text-carousel carousel-text ">Financial Services</div>
                             <div class="carousel-subtitle text-start">Our suite of tailored banking and retail product
                                 services enable payment providers,
                                 banks and fintech companies to run their operations efficiently at a reduced cost and
@@ -110,7 +104,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="images/Healthcaretech 1.png" class="d-block w-100" alt="Health Care">
-                        <div class="position-absolute financial-captions">
+                        <div class="position-absolute carousel-captions text-center">
                             <div class="text-carousel carousel-text text-start">Healthcare</div>
                             <div class="carousel-subtitle text-start">
                                 Our focus has been on building solutions that monitor and manage various physiological
@@ -179,7 +173,9 @@
                     src="images/linked-icon.png" alt="linkedin"></a>
         </div>
     </footer>
-
+    <!-- <button class="position-fixed to-bottom-btn border-0 bg-transparent" id="scrollToggleBtn">
+        <img src="images/down-arrow.png" alt="">
+    </button> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -197,7 +193,47 @@
             interval: 5000
         })
 
+        // Select the button
+        // const scrollToggleBtn = document.getElementById('scrollToggleBtn');
+
+        // // Flag to track the scroll state
+        // let scrollToBottom = true;
+
+        // // Add a click event listener
+        // scrollToggleBtn.addEventListener('click', () => {
+        //     if (scrollToBottom) {
+        //         // Scroll to the bottom
+        //         window.scrollTo({
+        //             top: document.body.scrollHeight,
+        //             behavior: 'smooth'
+        //         });
+        //         scrollToggleBtn.innerHTML = '<img src="images/up-arrow.png" alt="Scroll Up">';
+        //     } else {
+        //         // Scroll to the top
+        //         window.scrollTo({
+        //             top: 0,
+        //             behavior: 'smooth'
+        //         });
+        //         scrollToggleBtn.innerHTML = '<img src="images/down-arrow.png" alt="Scroll Down">';
+        //     }
+        //     scrollToBottom = !scrollToBottom; // Toggle the state
+        // });
+
+        // // Listen for the scroll event to adjust the state dynamically
+        // window.addEventListener('scroll', () => {
+        //     const isAtBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight;
+        //     if (isAtBottom) {
+        //         scrollToBottom = false;
+        //         scrollToggleBtn.innerHTML = '<img src="images/up-arrow.png" alt="Scroll Up">';
+        //     } else if (window.scrollY === 0) {
+        //         scrollToBottom = true;
+        //         scrollToggleBtn.innerHTML = '<img src="images/down-arrow.png" alt="Scroll Down">';
+        //     }
+        // });
+
+
     </script>
+
 </body>
 
 </html>

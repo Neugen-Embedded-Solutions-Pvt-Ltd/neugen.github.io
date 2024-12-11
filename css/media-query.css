@@ -24,21 +24,39 @@
 }
 
 @media (max-width:1440px) {
-    .financial-captions {
-     
-        /* padding: 20px 20px; */
-    }
 
     .carousel-captions {
         bottom: 19px;
         /* width: 65%; */
         /* padding: 17px 38px 23px; */
     }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 242px !important;
+    }
+    .carousel-control-prev {
+        left: 74px !important;
+    }
 }
 
 @media (max-width: 1061px) {
     .site-navbar .site-navigation .site-menu>li>a {
         margin-right: 36px !important;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 257px !important;
+    }
+
+    .carousel-control-next {
+        right: 86px !important;
+
+    }
+
+    .carousel-control-prev {
+        left: 86px !important;
     }
 }
 
@@ -47,12 +65,11 @@
         bottom: 14px;
         width: 66%;
         padding: 17px 25px 17px;
+
     }
 
     .carousel-text {
-        color: var(--color-white);
         font-size: 24px;
-        font-weight: 100;
         line-height: 30px;
     }
 
@@ -60,8 +77,25 @@
         font-size: 16px;
         line-height: 26px;
     }
-}
 
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 257px !important;
+    }
+
+    .carousel-control-next {
+        right: 81px !important;
+    }
+
+    .carousel-control-prev {
+        left: 81px !important;
+    }
+
+    .arrow-icon {
+        max-width: 19px;
+        width: 100%;
+    }
+}
 
 @media (max-width: 991.98px) {
     .site-navbar .site-logo {
@@ -92,8 +126,7 @@
 
     .carousel-captions {
         bottom: 10px;
-        width: 68%;
-        /* padding: 12px 21px 12px; */
+        width: 71%;
     }
 
     .carousel-text {
@@ -106,8 +139,17 @@
         line-height: 25px;
     }
 
-    .financial-captions {
-        width: 37%;
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 205px !important;
+    }
+
+    .carousel-control-next {
+        right: 63px !important;
+    }
+
+    .carousel-control-prev {
+        left: 63px !important;
     }
 }
 
@@ -151,9 +193,21 @@
         min-height: 280px;
     }
 
-    .financial-captions {
-        width: 41%;
-        left: 78px;
+    .carousel-captions {
+        width: 78%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 185px !important;
+    }
+
+    .carousel-control-next {
+        right: 27px !important;
+    }
+
+    .carousel-control-prev {
+        left: 27px !important;
     }
 }
 
@@ -184,7 +238,7 @@
     }
 
     .carousel-captions {
-        width: 73%;
+        width: 79%;
         padding: 10px 16px 10px;
     }
 
@@ -193,11 +247,19 @@
         line-height: 20px;
     }
 
-    .financial-captions {
-        width: 55%;
-        left: 59px;
+    .carousel-control-prev,
+    .carousel-control-next {
+        padding: .25rem !important;
+        top: 176px !important;
     }
- 
+
+    .carousel-control-next {
+        right: 22px !important;
+    }
+
+    .carousel-control-prev {
+        left: 22px !important;
+    }
 }
 
 @media (max-width:500px) {
@@ -266,7 +328,7 @@
     }
 
     .carousel-item img {
-        min-height: 200px;
+        min-height: 180px;
     }
 
     .carousel-subtitle {
@@ -278,20 +340,26 @@
         font-size: 13px;
         line-height: 12px;
     }
- 
-
-    .financial-captions {
-        padding: 10px 16px;
-        left: 47px;
-    }
 
     .carousel-control-prev,
     .carousel-control-next {
-        width: 4% !important;
         padding: .25rem !important;
-        height: 30px;
-
+        top: 110px !important;
     }
+
+    .carousel-control-next {
+        right: 20px !important;
+    }
+
+    .carousel-control-prev {
+        left: 20px !important;
+    }
+
+    .carousel-captions {
+        width: 75%;
+        padding: 8px 10px 8px;
+    }
+
 }
 
 @media (max-width: 460px) {
@@ -547,11 +615,6 @@
         width: 100%;
     }
 
-    .carousel-captions {
-        width: 81%;
-        padding: 8px 10px 8px;
-    }
-
     .carousel-text {
         font-size: 11px;
         line-height: 10px;
@@ -560,28 +623,6 @@
     .carousel-subtitle {
         font-size: 9px;
         line-height: 16px;
-    }
- 
-
-    .financial-captions {
-        padding: 7px 13px;
-        left: 36px;
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-        width: 4% !important;
-        padding: 0.1rem !important;
-        height: 30px;
-
-    }
-
-    .carousel-control-next {
-        right: 3% !important;
-    }
-
-    .carousel-control-prev {
-        left: 2% !important;
     }
 }
 
@@ -601,5 +642,23 @@
 
     .carousel-indicators {
         top: 108% !important;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 110px !important;
+    }
+
+    .carousel-control-next {
+        right: 12px !important;
+    }
+
+    .carousel-control-prev {
+        left: 12px !important;
+    }
+
+    .carousel-captions {
+        width: 80%;
+        padding: 8px 10px 8px;
     }
 }
