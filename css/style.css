@@ -972,3 +972,6 @@ footer .social-media-links {
   bottom: 7%;
   right: 16px;
 }
+footer .menu  a:hover{
+  color: #9CDDFF;
+}
